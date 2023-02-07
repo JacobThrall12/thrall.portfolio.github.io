@@ -1,0 +1,211 @@
+/*Color Schemes:
+-Moss Green #878A58
+-Bone #E8DED1
+-Old Lavender #6A5D7B
+-English Violet #5D4A66
+-Black #000000
+
+*/
+/** Grid system - https://www.w3schools.com/css/css_rwd_grid.asp **/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+ 
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+html {    
+    color: black;
+    font-family:'Quicksand', sans-serif;
+    font-size: 62.5%;
+    line-height: 1.4rem;
+}
+
+body {
+    line-height: 1.4rem;
+    background-color: #E8DED1;
+    background-image: repeating-linear-gradient(30deg,
+                  hsla(0,0%,100%,.1),
+                  hsla(0,0%,100%,.1) 15px,
+                  transparent 0, transparent 30px);
+   
+}
+#HomePage{
+  margin: 2 auto;
+}
+img{
+    width: 100%;
+    height: auto;
+    
+}
+h1 {
+    font-weight: 400;
+    font-size: 5rem;
+    line-height: 1.1em;
+    text-align: center;
+    color: #878A58;
+    margin-top: 1em;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1.1rem;
+    color: black;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.1rem;
+    text-align: center;
+    color: #157187;
+}
+
+p {
+    font-size: 1.4rem;
+}
+.typewriter h1 a{
+    text-decoration: none;
+    color: #878A58;
+    text-shadow: 1px 1px 2px #6A5D7B;
+}
+.typewriter h1 a:hover{
+  text-decoration: none;
+  color: #6A5D7B;
+  text-shadow: 1px 1px 2px #878A58;
+}
+.typewriter h1 {
+    float: left;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #878A58; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .10em; /* Adjust as needed */
+  
+    animation: 
+      typing 4s,
+      blink-caret 4s;
+      animation-fill-mode: forwards;
+  }
+  .staticTypewriter h1 a{
+    text-decoration: none;
+    color: #878A58;
+    text-shadow: 1px 1px 2px #6A5D7B;
+  }
+  .staticTypewriter h1 a:hover{
+    text-decoration: none;
+    color: #6A5D7B;
+    text-shadow: 1px 1px 2px #878A58;
+  }
+  .staticTypewriter h1 {
+     float: left;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */  
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 .4em 0 .2em; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .10em; /* Adjust as needed */
+  }
+ 
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to{width: 25%}
+    
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    0% { border-color: #878A58; }
+    to{border-color: transparent }
+  }
+  #NavBar{
+    padding: 2em 4em 2em 2em;
+    
+  }
+  
+  #NavBar li{
+    padding: 1rem;
+    font-size: 3em;
+    text-align: center;
+    display: inline;
+    
+  }
+  #NavBar li a{
+    text-decoration: none;
+    
+    color: #6A5D7B;
+  }
+  #NavBar li a:hover{
+    color:#878A58;
+    background-color: #E8DED1;
+    font-weight: bold;
+  }
+ #MainBody{
+    width: 100%;
+    margin: 2em auto 2em;
+    padding: 2em 2em 2em;
+    background-color: rgba(50, 50, 50, 0.5);
+    border: 4mm ridge rgba(198, 202, 127, 0.562);
+   
+ }
+ .divider {
+    width: 25%;
+    height: 1em;
+    border: none;
+    background-color: #6A5D7B;
+    margin: 0 auto;
+    
+ }
+ #MainBody img{
+    width: 75%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+ }
+ @media only screen and (max-width: 600px) {
+    #MainBody img {
+     width: 100%;
+    }
+  }
+ #MainBody p{
+    font-size: 2.5rem;
+    line-height: 1.4em;
+    font-weight: 1.2em;
+    text-align: center;
+    overflow-wrap: break-word;
+ }
+ .flex-column{
+  float: left;
+ }
