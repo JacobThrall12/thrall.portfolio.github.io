@@ -82,6 +82,7 @@ h2 {
     line-height: 1.1rem;
     color: black;
     text-align: center;
+    padding-top: 1cm;
 }
 
 h3 {
@@ -171,6 +172,11 @@ p {
     background-color: #E8DED1;
     font-weight: bold;
   }
+
+  .size{
+    font-size: 3rem;
+  }
+
  #MainBody{
     width: 100%;
     margin: 2em auto 2em;
@@ -205,6 +211,8 @@ p {
     font-weight: 1.2em;
     text-align: center;
     overflow-wrap: break-word;
+    text-align: justify;
+    padding: 0.5cm;
  }
  .flex-column{
   float: left;
